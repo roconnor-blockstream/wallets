@@ -38,7 +38,7 @@ $ brun '(+ (q 10) (q 20) (q 30) (q 40))' '()'
 
 You may have noticed that the multiplication example above takes more than two parameters in the list.
 This is because many operators can take variable amounts of parameters.
-`+` and `-` are commutative so the order of parameters does not matter.
+`+` and `*` are commutative so the order of parameters does not matter.
 For non-commutative operations, `(- (q 100) (q 30) (q 20) (q 5))` is equivalent to `(- (q 100) (+ (q 30) (q 20) (q 5)))`.
 Similarly, `(/ 120 5 4 2)` is equivalent to `(/ 120 (* 5 4 2))`.
 
